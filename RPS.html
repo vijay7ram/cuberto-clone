@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Sample website</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300&family=Palanquin+Dark:wght@700&family=Paytone+One&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300&family=Palanquin+Dark:wght@700&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+        <style>
+            body{
+                background:linear-gradient(#0a0a0a,#3e2b2b);
+                }
+                html{
+                    height: 100%;
+                }
+                
+                .menu{
+                    position: relative;
+                    display: flex;
+                }
+                .menu a{
+                    text-decoration: none;
+                    font-family: 'Lexend',sans-serif;
+                    font-size: 2em;
+                    color: rgba(255, 255, 255, 0.733);
+                    font-weight: bold;
+                    margin-left: 35px;
+                    
+                }
+                .cc2{
+                    display: none;
+                    background-color: #00000050;
+                    padding: 25px;
+                    border-radius: 25px;
+                    text-align: center;
+                    
+                    
+                }
+                .cc:hover .cc2{
+                    display: block;
+                }
+                .cc2 a{
+                    display: block;
+                }
+                
+                .menu a:hover{
+                    color: white;
+                }
+                .btn{
+                    
+                    display: inline-block;
+                    position: absolute;
+                    right: 30px;
+                    top: 15%;
+                    margin-right: 20px;
+                }
+                .btn button{
+                    margin-left: 20px;
+                    margin-top: 20px;
+                    background-color: rgba(255, 255, 255, 0.788);
+                    color: rgb(0, 0, 0);
+                    font-family: 'poppins',sans-serif;
+                    padding: 15px 20px;
+                    font-size: 20px;
+                    font-weight: bold;
+                    border: 1px solid rgba(255, 255, 255, 0.815);
+                    border-radius:7px;
+                    
+                }
+                .btn button:hover{
+                    background-color: white;
+                    color: black;
+                }
+                h1{
+                    font-family: 'Palanquin Dark',sans-serif;
+                    color: rgba(255, 255, 255, 0.852);
+                    text-align: center;
+                    font-size: 3em;
+                }
+               .j {
+                background: linear-gradient(#00000010,#00000063);
+                border-radius: 15px;
+                position:absolute;
+                text-align: center;
+                left: 30%;
+                top: 40%;
+                padding: 40px;
+                height: 320px;
+                width: 500px;
+               }
+               .j label{
+                color: rgba(255, 255, 255, 0.854);
+                font-size: 2em;
+                font-family: 'poppins' ,arial;
+               }
+               h2{
+                font-size: 35px;
+                color:rgb(0, 174, 255);
+                font-family: 'Paytone One' ,arial;
+                font-weight: bold;
+               }
+               .j button{
+                font-family:'poppins' ,arial ;
+                color: black;
+                outline: 0px;
+                font-weight: bold;
+                border: 0px;
+                border-radius: 10px;
+                font-size: 2em;
+                padding: 10px;
+                background-color: aqua;
+               }
+               #g1{
+                text-align: center;
+                background: linear-gradient(#0000005f,#0000007f);
+                position: absolute;
+                left: 30%;
+                top: 40%;
+                padding: 40px;
+                height: 320px;
+                width: 500px;
+                border-radius: 15px;
+                z-index: -1;
+            }
+            #g1 label{
+                color: rgba(255, 255, 255, 0.854);
+                font-size: 2em;
+                font-family: 'poppins' ,arial;
+               }
+               #g2 label{
+                color: rgba(255, 255, 255, 0.854);
+                font-size: 1em;
+                font-family: 'poppins' ,arial;
+               }
+               #g1 input{
+                border-radius: 7px;
+                background-color: black;
+                outline: 0px;
+                border: 0px;
+                width: 300px;
+                height: 40px;
+                color: white;
+                font-size: 2em;
+               }
+               #btn{
+                font-family:'poppins' ,arial ;
+                color: black;
+                outline: 0px;
+                font-weight: bold;
+                border: 0px;
+                border-radius: 10px;
+                font-size: 2em;
+                padding: 10px;
+                background-color: aqua;
+               }
+               #back{
+                font-family:'poppins' ,arial ;
+                color: black;
+                outline: 0px;
+                font-weight: bold;
+                border: 0px;
+                border-radius: 10px;
+                font-size: 1em;
+                padding: 3px;
+                background-color: rgb(0, 255, 55);
+               }
+               #g2{
+                text-align: center;
+                background: linear-gradient(#0000005f,#0000007f);
+                position: absolute;
+                left: 30%;
+                top: 40%;
+                padding: 40px;
+                height: 320px;
+                width: 500px;
+                border-radius: 15px;
+                z-index: -1;}
+                #btn2{
+                    font-family:'poppins' ,arial ;
+                color: black;
+                outline: 0px;
+                font-weight: bold;
+                border: 0px;
+                border-radius: 10px;
+                font-size: 1em;
+                padding: 10px;
+                background-color: aqua;
+                }
+                #goback{
+                    font-family:'poppins' ,arial ;
+                color: black;
+                outline: 0px;
+                font-weight: bold;
+                border: 0px;
+                border-radius: 10px;
+                font-size: 1em;
+                padding: 10px;
+                background-color: rgb(0, 255, 72);
+                }
+           </style>
+           </head>
+     <body>
+
+    <h1>WELCOME BRO</h1>
+
+<div class="btn">
+    <button type="button">Login</button>
+    <button type="button">Signup</button>
+</div>
+<div class="menu">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <div class="cc"><a href="">Contact Us</a>
+        <div class="cc2">
+            <a href="mailto:vijayyathagiri@gmail.com">Mail Us</a>
+            <a href="tel:+917337524">Whatsapp Us</a>
+        </div>
+    </div>
+</div>
+<div class="j" id="j">
+<h2>WANNA PLAY A GAME</h2>
+<label>CHOOSE ONE</label><br>
+<label for="ng">Number guessing Game</label>
+<input type="radio" name="game" id="ng"><br>
+<label for="ng">Rock Paper Scissors</label>
+<input type="radio" name="game" id="rps"><br><br>
+<button type="button" id="play">Play</button>
+</div>
+<div id="g1">
+    <label>Enter a number between 1-10</label><br><br>
+    <input type="number" id="in" max="10" min="1"><br><br>
+    <button type="button" id="btn">Confirm</button><br>
+    <label id="cc"></label><br>
+    <label id="result"></label><br><br>
+    <button type="button" id="back">GO BACK</button></div>
+<div id="g2" style="display: none;">
+        <h2>ROCK PAPER SCISSOR</h2>
+        <label>select your option</label><br>
+        <label for="r">ROCK</label>
+        <input type="radio" name="op" id="r"><br>
+        <label for="p">PAPER</label>
+        <input type="radio" name="op" id="p"><br>
+        <label for="s">SCISSOR</label>
+        <input type="radio" name="op" id="s"><br>
+        <button type="button" id="btn2">CHOOSE</button><br>
+        <label id="ccc"></label><br>
+        <label id="rrr"></label><br>
+        <button type="button" id="goback">GO BACK</button>
+        </div>
+       <script>
+        
+        const g1Div = document.getElementById("g1");
+g1Div.style.display = "none";
+  // Get reference to the "Play" button
+  const playButton = document.getElementById("play");
+
+  // Add a click event listener to the "Play" button
+  document.getElementById("play").onclick=function(){
+    if(document.getElementById("ng").checked){
+    // Get references to the game selection and game code divs
+    const gameSelectionDiv = document.getElementById("j");
+    const gameCodeDiv = document.getElementById("g1");
+
+    // Hide the game selection div
+    gameSelectionDiv.style.display = "none";
+
+    // Show the game code div
+    gameCodeDiv.style.display = "block";
+    }
+    document.getElementById("back").onclick=function(){
+        const j =document.getElementById("j")
+        const g1 =document.getElementById("g1")
+        g1.style.display="none"
+        j.style.display= "block"
+        
+    }
+    if(document.getElementById("rps").checked){
+    // Get references to the game selection and game code divs
+    const gameSelectionDiv = document.getElementById("j");
+    const gameCodeDiv = document.getElementById("g2");
+
+    // Hide the game selection div
+    gameSelectionDiv.style.display = "none";
+
+    // Show the game code div
+    gameCodeDiv.style.display = "block";
+    }
+    document.getElementById("goback").onclick=function(){
+        const j =document.getElementById("j")
+        const g2 =document.getElementById("g2")
+        g2.style.display="none"
+        j.style.display= "block"
+        
+    }
+  }
+
+  let r, c, p;
+
+  document.getElementById("btn").onclick = function() {
+    c = Math.ceil(Math.random() * 10);
+    p = document.getElementById("in").value;
+    if(p>10 || p<0){
+        document.getElementById("result").innerHTML = "CHOOSE BETWEEN 1-10";
+    }
+    else if(p==""){
+        document.getElementById("result").innerHTML = "YOU SHOULD CHOOSE ONE";
+    }
+     else if (p == c) {
+        document.getElementById("cc").innerHTML = "computer chooses " + c;
+      document.getElementById("result").innerHTML = "YOU GUESSED RIGHT";
+      
+    } else if (c < p && p>0 && p<=10) {
+        document.getElementById("cc").innerHTML = "computer chooses " + c;
+      document.getElementById("result").innerHTML = "YOUR GUESS IS BIG";
+    } else if (c > p && p>0 && p<=10) {
+        document.getElementById("cc").innerHTML = "computer chooses " + c;
+      document.getElementById("result").innerHTML = "YOUR GUESS IS SMALL";
+    }
+  }
+  document.getElementById("btn2").onclick=function(){
+                let comp = Math.ceil(Math.random()*3)
+                let cc 
+                if(comp==1){
+                    cc="ROCK"
+                }
+                if(comp==2){
+                    cc="PAPER"
+                }
+                if(comp==3){
+                    cc="SCISSOR"
+                }
+                   if(document.getElementById("r").checked && comp==1){
+                    document.getElementById("ccc").innerHTML="computer chooses "+cc
+                    document.getElementById("rrr").innerHTML= "ITS A TIE"
+                   }
+                   if(document.getElementById("r").checked && comp==2){
+                    document.getElementById("ccc").innerHTML="computer chooses "+cc
+                    document.getElementById("rrr").innerHTML= "COMPUTER WINS"
+                   }
+                   if(document.getElementById("r").checked && comp==3){
+                    document.getElementById("ccc").innerHTML="computer chooses "+cc
+                    document.getElementById("rrr").innerHTML= "YOU WON"
+                   }
+                   if(document.getElementById("p").checked && comp==1){
+                    document.getElementById("ccc").innerHTML="computer chooses "+cc
+                    document.getElementById("rrr").innerHTML= "YOU WON"
+                   }
+                   if(document.getElementById("p").checked && comp==2){
+                    document.getElementById("ccc").innerHTML="computer chooses "+cc
+                    document.getElementById("rrr").innerHTML= "ITS A TIE"
+                   }
+                   if(document.getElementById("p").checked && comp==3){
+                    document.getElementById("ccc").innerHTML="computer chooses "+cc
+                    document.getElementById("rrr").innerHTML= "COMPUTER WINS"
+                   }
+                   if(document.getElementById("s").checked && comp==1){
+                    document.getElementById("ccc").innerHTML="computer chooses "+cc
+                    document.getElementById("rrr").innerHTML= "COMPUTER WINS"
+                   }
+                   if(document.getElementById("s").checked && comp==2){
+                    document.getElementById("ccc").innerHTML="computer chooses "+cc
+                    document.getElementById("rrr").innerHTML= "YOU WON"
+                   }
+                   if(document.getElementById("s").checked && comp==3){
+                    document.getElementById("ccc").innerHTML="computer chooses "+cc
+                    document.getElementById("rrr").innerHTML= "ITS A TIE"
+                   }
+            }
+</script>
+     </body>      
+    
+</html>
